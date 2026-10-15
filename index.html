@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moringa Bloom Cafe | Artisanal Coffee & Botanical Sanctuary</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience Moringa Bloom Cafe: A warm, elegant sanctuary celebrating artisanal single-origin coffee, nourishing moringa superfood infusions, and fresh bakery delights.">
+  <meta name="keywords" content="Moringa Bloom Cafe, artisan coffee, specialty cafe, moringa latte, bakery, brunch, botanical cafe">
+  <meta name="author" content="Moringa Bloom Cafe">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Moringa Bloom Cafe | Artisanal Coffee & Botanical Sanctuary">
+  <meta property="og:description" content="A warm, elegant cafe aesthetic celebrating handcrafted brews, moringa wellness infusions, and freshly baked delights.">
+  <meta property="og:image" content="assets/images/cafe_interior.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Apple Touch Icon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/moringa_logo.jpg">
+
+  <!-- Custom Stylesheet (Pure CSS3 - No heavy frameworks) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom Vanilla JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (WordPress Equivalent: header.php)
+       ========================================================================== -->
+  <header class="header" role="banner">
+    <div class="container nav-container">
+      <!-- Cafe Brand / Logo -->
+      <a href="#home" class="brand-logo" aria-label="Moringa Bloom Cafe Home">
+        <div class="logo-badge">
+          <img src="assets/images/moringa_logo.jpg" alt="Moringa Bloom Cafe Logo Badge" onerror="this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=100&q=80'">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Moringa Bloom</span>
+          <span class="brand-tagline">Artisanal Cafe &bull; Est. 2024</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Reserve a Table</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#menu" class="mobile-nav-link">Menu</a>
+      <a href="#about" class="mobile-nav-link">About Us</a>
+      <a href="#why-us" class="mobile-nav-link">Why Choose Us</a>
+      <a href="#gallery" class="mobile-nav-link">Image Gallery</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#hours" class="mobile-nav-link">Opening Hours</a>
+      <a href="#contact" class="mobile-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Book a Table</a>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">
+        &copy; 2026 Moringa Bloom Cafe. All rights reserved.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT (WordPress Equivalent: front-page.php)
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION (WordPress: template-parts/hero.php) -->
+    <section id="home" class="hero" aria-label="Welcome to Moringa Bloom Cafe">
+      <div class="hero-bg">
+        <img 
+          src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80" 
+          alt="Warm and inviting atmospheric seating inside Moringa Bloom Cafe" 
+          class="hero-bg-img"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span>&#10022; Organic Sourced &bull; Artisanal Brews &#10022;</span>
+        </div>
+        <h1 class="hero-title">
+          Handcrafted Coffee &amp; <span>Botanical Goodness</span>
+        </h1>
+        <p class="hero-description">
+          Step into an oasis of warmth and relaxation. At Moringa Bloom Cafe, we harmonize specialty single-origin coffees with organic moringa wellness infusions and artisanal baked treats made fresh every morning.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>View Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Us</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+
+        <!-- Trust Badges & Highlights -->
+        <div class="hero-highlights">
+          <div class="hero-highlight-item">
+            <div class="highlight-number">100%</div>
+            <div class="highlight-text">Single-Origin Arabica</div>
+          </div>
+          <div class="hero-highlight-item">
+            <div class="highlight-number">Pure</div>
+            <div class="highlight-text">Moringa Superfood Infusions</div>
+          </div>
+          <div class="hero-highlight-item">
+            <div class="highlight-number">Daily</div>
+            <div class="highlight-text">Artisan Oven Bakes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT OUR CAFE SECTION (WordPress: template-parts/about.php) -->
+    <section id="about" class="section section-bg-cream" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Image with floating card -->
+          <div class="about-image-wrapper">
+            <img 
+              src="assets/images/cafe_interior.jpg" 
+              alt="Authentic warm interior seating of Moringa Bloom Cafe with comfortable seating and ambient lighting" 
+              class="about-main-img"
+              onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80'"
+            >
+            <div class="about-floating-card">
+              <div class="floating-icon" aria-hidden="true">&#9749;</div>
+              <div>
+                <div class="floating-text-title">Crafted with Soul</div>
+                <div class="floating-text-desc">Slow-poured perfection in every cup</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Pillars -->
+          <div class="about-content">
+            <span class="section-badge">&#127807; Our Story &amp; Philosophy</span>
+            <h2 id="about-heading" class="section-title">Where Mindful Wellness Meets Artisan Coffee Culture</h2>
+            <p class="about-lead">
+              Moringa Bloom Cafe was born from a simple yet profound vision: to blend the rich ritual of artisanal coffee roasting with the natural restorative benefits of organic moringa.
+            </p>
+            <p class="about-text">
+              Whether you are dropping in for a sunrise espresso, catching up with dear friends over our signature botanical bowls, or seeking a quiet corner to read and reflect, our sunlit space wraps you in earthy warmth, natural wood tones, and welcoming hospitality.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature-item">
+                <span class="feature-check-icon">&#10003;</span>
+                <div class="feature-text-block">
+                  <strong>Ethically Sourced Beans</strong>
+                  <p>Direct-trade micro-lot coffee beans roasted to perfection.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <span class="feature-check-icon">&#10003;</span>
+                <div class="feature-text-block">
+                  <strong>Botanical Moringa Superfood</strong>
+                  <p>Nutrient-dense moringa harvested fresh from certified organic gardens.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <span class="feature-check-icon">&#10003;</span>
+                <div class="feature-text-block">
+                  <strong>Fresh Daily Oven Bakes</strong>
+                  <p>Flaky butter croissants, sourdoughs, and gluten-free pastries.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <span class="feature-check-icon">&#10003;</span>
+                <div class="feature-text-block">
+                  <strong>Warm Community Sanctuary</strong>
+                  <p>A tranquil acoustic space filled with leafy botanicals and natural light.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#menu" class="btn btn-outline-dark">Explore Our Offerings</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED MENU SECTION (WordPress: template-parts/menu.php) -->
+    <section id="menu" class="section section-bg-warm" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#9749; Handcrafted Delicacies</span>
+          <h2 id="menu-heading" class="section-title">Featured Coffee &amp; Food</h2>
+          <p class="section-subtitle">
+            Every drink is custom poured and every dish is freshly prepared with wholesome, locally sourced ingredients.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-filters" role="tablist" aria-label="Menu category filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Delights</button>
+          <button class="filter-btn" data-filter="coffee" role="tab" aria-selected="false">Specialty Coffee</button>
+          <button class="filter-btn" data-filter="herbal" role="tab" aria-selected="false">Moringa &amp; Teas</button>
+          <button class="filter-btn" data-filter="bakery" role="tab" aria-selected="false">Artisan Bakery</button>
+          <button class="filter-btn" data-filter="savory" role="tab" aria-selected="false">Savory Bites</button>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid">
+          <!-- Item 1: Moringa Latte -->
+          <article class="menu-card" data-category="herbal">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" 
+                alt="Signature Moringa Velvet Latte with intricate latte leaf art" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag tag-moringa">Signature Blend</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Moringa Velvet Latte</h3>
+                <span class="menu-item-price">&#8377;220</span>
+              </div>
+              <p class="menu-item-desc">
+                Stone-ground organic moringa leaves whisked with creamy oat milk, raw forest honey, and subtle Madagascar vanilla.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> 100% Organic &bull; Vegan</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Cinnamon Cappuccino -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80" 
+                alt="Artisan cappuccino with velvety foam and dusting of organic cinnamon" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Bestseller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Honey Cinnamon Cappuccino</h3>
+                <span class="menu-item-price">&#8377;190</span>
+              </div>
+              <p class="menu-item-desc">
+                Double shot of single-origin espresso crowned with microfoam, Ceylon cinnamon, and wildflower honey drizzle.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Barista Pick</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Cold Brew Tonic -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
+                alt="Chilled cold brew tonic served with citrus twist and fresh botanical sprig" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Refreshing</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Citrus Cold Brew &amp; Tonic</h3>
+                <span class="menu-item-price">&#8377;210</span>
+              </div>
+              <p class="menu-item-desc">
+                24-hour steep slow drip cold brew paired with sparkling botanical tonic, candied orange peel, and fresh rosemary.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Sugar Free &bull; Vegan</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Avocado Toast -->
+          <article class="menu-card" data-category="savory">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" 
+                alt="Fresh avocado tartine on toasted sourdough with microgreens and pumpkin seeds" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Chef's Special</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Moringa Sourdough Tartine</h3>
+                <span class="menu-item-price">&#8377;280</span>
+              </div>
+              <p class="menu-item-desc">
+                Rustic sourdough toast, smashed Hass avocado, house moringa herb emulsion, pickled radish, and toasted pumpkin seeds.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> 100% Plant Based</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Truffle Mushroom Toast -->
+          <article class="menu-card" data-category="savory">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80" 
+                alt="Pan-seared wild mushrooms with thyme and creamy truffle sauce on crusty bread" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Gourmet</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Truffle Wild Mushroom Brioche</h3>
+                <span class="menu-item-price">&#8377;320</span>
+              </div>
+              <p class="menu-item-desc">
+                Sauteed cremini &amp; oyster mushrooms in garlic herb butter, white truffle essence, and aged parmesan on toasted brioche.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Vegetarian</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Pistachio Croissant -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" 
+                alt="Golden buttery flaky French croissant filled with rich pistachio cream" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag tag-moringa">Baked Fresh</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Pistachio &amp; Moringa Croissant</h3>
+                <span class="menu-item-price">&#8377;180</span>
+              </div>
+              <p class="menu-item-desc">
+                Flaky layered French butter pastry filled with roasted pistachio cream, moringa green glaze, and crushed nuts.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Fresh Daily Batch</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Brioche French Toast -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" 
+                alt="Golden French toast with maple syrup, fresh berries and whipped cream" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Brunch Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Vanilla Berry French Toast</h3>
+                <span class="menu-item-price">&#8377;260</span>
+              </div>
+              <p class="menu-item-desc">
+                Thick golden brioche soaked in spiced custard, served with fresh blueberries, pure maple syrup, and whipped cream.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Vegetarian</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Moringa Herbal Infusion Tea -->
+          <article class="menu-card" data-category="herbal">
+            <div class="menu-card-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80" 
+                alt="Clear glass teapot with fresh brewing herbal tea leaves and lemon" 
+                class="menu-card-img"
+                loading="lazy"
+              >
+              <span class="menu-tag">Holistic</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Botanical Bloom Herbal Pot</h3>
+                <span class="menu-item-price">&#8377;160</span>
+              </div>
+              <p class="menu-item-desc">
+                A soothing, caffeine-free infusion of whole dried moringa leaves, chamomile blossoms, ginger root, and lemongrass.
+              </p>
+              <div class="menu-card-footer">
+                <span class="dietary-indicator"><span class="dietary-dot"></span> Immunity Booster</span>
+                <a href="#contact" class="order-link-btn">Order &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US SECTION (WordPress: template-parts/why-us.php) -->
+    <section id="why-us" class="section section-bg-cream" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#128081; The Moringa Bloom Experience</span>
+          <h2 id="why-heading" class="section-title">Why Our Guests Love Us</h2>
+          <p class="section-subtitle">
+            More than just another coffee shop — we are a conscious community sanctuary built on quality, warmth, and natural vitality.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Pillar 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">&#9749;</div>
+            <h3 class="feature-card-title">Direct-Trade Single Origins</h3>
+            <p class="feature-card-desc">
+              We partner with sustainable coffee plantations to source 100% specialty grade Arabica beans, roasted in small batches to preserve nuanced aromas.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">&#127807;</div>
+            <h3 class="feature-card-title">Superfood Moringa Wellness</h3>
+            <p class="feature-card-desc">
+              Our signature drinks are infused with antioxidant-rich, organic moringa oleifera to give you lasting vitality without caffeine jitters.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">&#129360;</div>
+            <h3 class="feature-card-title">Scratch Bakery &amp; Sourdough</h3>
+            <p class="feature-card-desc">
+              Our bakers start at dawn using slow-fermented levain, unbleached flours, and pure cultured butter with no artificial preservatives.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">&#129509;</div>
+            <h3 class="feature-card-title">Warm Acoustic Sanctuary</h3>
+            <p class="feature-card-desc">
+              Thoughtfully curated acoustics, plush seating, ambient natural lighting, and lush botanical indoor plants ensure your calm and comfort.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. IMAGE GALLERY SECTION (WordPress: template-parts/gallery.php) -->
+    <section id="gallery" class="section section-bg-warm" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#128248; Visual Stories</span>
+          <h2 id="gallery-heading" class="section-title">Moments at Moringa Bloom</h2>
+          <p class="section-subtitle">
+            Glimpse into daily life, slow coffee moments, and comfortable corners inside our cafe.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery 1: Real Cafe Interior -->
+          <div class="gallery-item span-2" role="button" tabindex="0" aria-label="View authentic cafe interior and cozy seating">
+            <img 
+              src="assets/images/cafe_interior.jpg" 
+              alt="Warm, ambient interior of Moringa Bloom Cafe featuring comfortable banquettes and botanical accents" 
+              class="gallery-img"
+              loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80'"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Interior &bull; Greater Noida</span>
+              <h3 class="gallery-caption-title">The Cozy Banquette Lounge</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+
+          <!-- Gallery 2: Barista Pour Over -->
+          <div class="gallery-item" role="button" tabindex="0" aria-label="View barista pouring handcrafted coffee">
+            <img 
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" 
+              alt="Artisan barista carefully pouring water over fresh coffee grounds in a V60 brewer" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Craft &bull; Ritual</span>
+              <h3 class="gallery-caption-title">Single Origin Pour-Over</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+
+          <!-- Gallery 3: Fresh Baked Pastries -->
+          <div class="gallery-item" role="button" tabindex="0" aria-label="View morning fresh pastries">
+            <img 
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" 
+              alt="Assortment of fresh golden croissants, sourdough baguettes, and morning pastries on wooden display" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Morning &bull; Bakery</span>
+              <h3 class="gallery-caption-title">Fresh Oven Bakes</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+
+          <!-- Gallery 4: Botanical Corner -->
+          <div class="gallery-item" role="button" tabindex="0" aria-label="View botanical reading corner">
+            <img 
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" 
+              alt="Sunny cafe window table surrounded by lush green house plants and natural wood textures" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Sanctuary &bull; Green</span>
+              <h3 class="gallery-caption-title">Sunlit Window Nook</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+
+          <!-- Gallery 5: Morning Cup & Reading -->
+          <div class="gallery-item span-2" role="button" tabindex="0" aria-label="View relaxing reading moments with warm brew">
+            <img 
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80" 
+              alt="Warm ceramic cup of latte sitting next to an open book on a rustic wooden table" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Mindful &bull; Calm</span>
+              <h3 class="gallery-caption-title">Slow Mornings &amp; Good Reads</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+
+          <!-- Gallery 6: Veranda Outdoor Patio -->
+          <div class="gallery-item" role="button" tabindex="0" aria-label="View outdoor patio seating">
+            <img 
+              src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=800&q=80" 
+              alt="Outdoor cafe patio with wooden chairs, warm bistro festoon lights, and evening ambiance" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Evening &bull; Ambiance</span>
+              <h3 class="gallery-caption-title">Twilight Garden Terrace</h3>
+              <div class="gallery-zoom-icon">&#43;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL (Vanilla JS Controlled) -->
+    <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image preview modal">
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close preview modal">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- 6. CUSTOMER TESTIMONIALS (WordPress: template-parts/testimonials.php) -->
+    <section id="testimonials" class="section section-bg-cream" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#11088; Guest Love</span>
+          <h2 id="reviews-heading" class="section-title">What Our Guests Say</h2>
+          <p class="section-subtitle">
+            Warm feedback from coffee aficionados, remote creators, and weekend brunch lovers.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <blockquote class="testimonial-quote">
+                &ldquo;Moringa Bloom has elevated my expectations of what a modern cafe can be. Their signature Moringa Velvet Latte is earthy, comforting, and perfectly balanced. Truly my favorite spot in Greater Noida.&rdquo;
+              </blockquote>
+            </div>
+            <div class="testimonial-author-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+                alt="Portrait of Ananya Sharma" 
+                class="author-avatar"
+              >
+              <div class="author-info">
+                <h4>Ananya Sharma</h4>
+                <span>Food &amp; Lifestyle Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <blockquote class="testimonial-quote">
+                &ldquo;As someone working remotely, the warm atmosphere, fast Wi-Fi, and courteous baristas make this place unbeatable. The truffle mushroom toast with a pour-over is my everyday highlight.&rdquo;
+              </blockquote>
+            </div>
+            <div class="testimonial-author-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+                alt="Portrait of Rohan Verma" 
+                class="author-avatar"
+              >
+              <div class="author-info">
+                <h4>Rohan Verma</h4>
+                <span>Architect &amp; Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <blockquote class="testimonial-quote">
+                &ldquo;We celebrated my sister's birthday brunch here last weekend. The team arranged everything with such elegance! The pistachio croissants were fresh out of the oven and completely stole the show.&rdquo;
+              </blockquote>
+            </div>
+            <div class="testimonial-author-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" 
+                alt="Portrait of Priya &amp; Kabir" 
+                class="author-avatar"
+              >
+              <div class="author-info">
+                <h4>Priya &amp; Kabir</h4>
+                <span>Weekend Regulars</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. LOCATION & OPENING HOURS SECTION (WordPress: template-parts/hours.php) -->
+    <section id="hours" class="section section-bg-warm" aria-labelledby="hours-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#128339; Visit Us</span>
+          <h2 id="hours-heading" class="section-title">Location &amp; Opening Hours</h2>
+          <p class="section-subtitle">
+            Come spend quiet mornings or vibrant evenings with us. Find our timings and direct navigation below.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Timings & Operational Card -->
+          <div class="hours-card">
+            <div>
+              <div class="hours-header">
+                <div>
+                  <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">Working Hours</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Fresh coffee brewed all week</span>
+                </div>
+                <!-- Dynamic Live Status Badge -->
+                <div class="hours-status-badge">
+                  <span class="status-dot"></span> Open Now
+                </div>
+              </div>
+
+              <div class="hours-list">
+                <div class="hours-row highlight">
+                  <span class="hours-day">Monday &ndash; Thursday</span>
+                  <span class="hours-time">8:00 AM &ndash; 10:00 PM</span>
+                </div>
+                <div class="hours-row highlight">
+                  <span class="hours-day">Friday</span>
+                  <span class="hours-time">8:00 AM &ndash; 10:30 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">8:30 AM &ndash; 11:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">8:30 AM &ndash; 11:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-info-block">
+              <div class="loc-detail-item">
+                <span class="loc-icon">&#128205;</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>Near Pari Chowk, Knowledge Park, Greater Noida, Uttar Pradesh 201310</p>
+                </div>
+              </div>
+              <div class="loc-detail-item">
+                <span class="loc-icon">&#128222;</span>
+                <div>
+                  <strong>Direct Inquiries &amp; Table Booking</strong>
+                  <p><a href="tel:+917290880009" style="font-weight: 600; color: var(--color-muted-green);">+91 72908 80009</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map & Navigation Card -->
+          <div class="map-card-wrapper">
+            <div class="map-container">
+              <iframe 
+                title="Moringa Bloom Cafe Location Map"
+                src="https://maps.google.com/maps?q=Pari+Chowk,+Greater+Noida,+Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                loading="lazy" 
+                allowfullscreen="" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="map-footer-actions">
+              <div>
+                <strong style="color: var(--color-dark-brown); font-size: 0.95rem;">Moringa Bloom Cafe</strong>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Greater Noida &bull; Free Guest Parking Available</p>
+              </div>
+              <a 
+                href="https://maps.google.com/?q=Pari+Chowk,+Greater+Noida,+Uttar+Pradesh" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary btn-sm"
+              >
+                Get Directions &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT & RESERVATION SECTION (WordPress: template-parts/contact.php) -->
+    <section id="contact" class="section section-bg-cream" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">&#128236; Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Reserve a Table or Reach Out</h2>
+          <p class="section-subtitle">
+            Planning a relaxed brunch, birthday gathering, or simply wanting to say hello? Leave a note and we will be delighted to connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Quick Tiles -->
+          <div class="contact-info-panel">
+            <div class="contact-card-box">
+              <div class="contact-icon-bubble">&#128222;</div>
+              <div>
+                <div class="contact-box-title">Phone Reservations</div>
+                <div class="contact-box-val">
+                  <a href="tel:+917290880009">+91 72908 80009</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-icon-bubble">&#9993;</div>
+              <div>
+                <div class="contact-box-title">Email Us</div>
+                <div class="contact-box-val">
+                  <a href="mailto:hello@moringabloomcafe.com">hello@moringabloomcafe.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-icon-bubble">&#128172;</div>
+              <div>
+                <div class="contact-box-title">WhatsApp Order &amp; Queries</div>
+                <div class="contact-box-val">
+                  <a href="https://wa.me/917290880009" target="_blank" rel="noopener noreferrer">Chat on WhatsApp &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div style="background-color: var(--color-green-tint); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(78, 107, 79, 0.25);">
+              <h4 style="color: var(--color-muted-green-dark); font-size: 1.05rem; margin-bottom: 0.5rem;">Private Events &amp; Celebrations</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                We offer custom packages for intimate birthday celebrations, corporate coffee breaks, and group workshops. Mention your event requirements in the form!
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="cafeContactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name *</label>
+                  <input type="text" id="contactName" name="name" class="form-control" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" name="email" class="form-control" placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="contactGuests" class="form-label">Number of Guests</label>
+                  <select id="contactGuests" name="guests" class="form-control">
+                    <option value="1">1 Person (Solo Calm)</option>
+                    <option value="2" selected>2 Persons (Duo/Catchup)</option>
+                    <option value="3-5">3 - 5 Persons (Small Group)</option>
+                    <option value="6+">6+ Persons (Group / Party)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactDate" class="form-label">Preferred Date &amp; Time (Optional)</label>
+                <input type="text" id="contactDate" name="datetime" class="form-control" placeholder="e.g. This Saturday at 4:30 PM">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Special Requests or Notes</label>
+                <textarea id="contactMessage" name="message" rows="4" class="form-control" placeholder="Let us know if you need high chairs, corner booth, dietary options, or celebration decor..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Reservation / Message
+              </button>
+
+              <div id="contactFormFeedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (WordPress Equivalent: footer.php)
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="color: var(--color-cream);">
+            <div class="logo-badge" style="border-color: var(--color-beige);">
+              <img src="assets/images/moringa_logo.jpg" alt="Moringa Bloom Cafe Logo" onerror="this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=100&q=80'">
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: var(--color-cream);">Moringa Bloom</span>
+              <span class="brand-tagline" style="color: var(--color-beige);">Cafe &bull; Greater Noida</span>
+            </div>
+          </a>
+          <p>
+            An artisanal coffee house and botanical wellness sanctuary dedicated to handcrafted brews, nourishing natural eats, and warm neighborhood moments.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit our Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit our Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/917290880009" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Chat on WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#menu" class="footer-link">Full Menu</a></li>
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+            <li><a href="#gallery" class="footer-link">Photo Gallery</a></li>
+            <li><a href="#contact" class="footer-link">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours Summary -->
+        <div>
+          <h4 class="footer-col-title">Cafe Hours</h4>
+          <ul class="footer-links-list" style="color: var(--text-on-dark-muted); font-size: 0.9rem;">
+            <li><strong>Mon &ndash; Thu:</strong><br>8:00 AM &ndash; 10:00 PM</li>
+            <li><strong>Friday:</strong><br>8:00 AM &ndash; 10:30 PM</li>
+            <li><strong>Sat &ndash; Sun:</strong><br>8:30 AM &ndash; 11:00 PM</li>
+            <li style="margin-top: 0.5rem; color: var(--color-beige);">&#9749; Takeaway &amp; Dine-in Available</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div>
+          <h4 class="footer-col-title">Join The Bloom Club</h4>
+          <p style="font-size: 0.875rem; color: var(--text-on-dark-muted); line-height: 1.6;">
+            Subscribe to receive private coffee cupping invites, seasonal menus, and special cafe celebrations.
+          </p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">Subscribe &rarr;</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Moringa Bloom Cafe. All rights reserved. Handcrafted with care.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#contact" class="footer-link">Support &amp; Feedback</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
